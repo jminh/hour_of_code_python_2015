@@ -1,13 +1,11 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 import os
 import requests
 import sys
+import pytumblr
 
 from tumblr_auth import consumer_key, consumer_secret, oauth_token, oauth_secret
-
-sys.path.append("pytumblr")
-import pytumblr
 
 
 def download_file(url, dir='.'):
@@ -39,7 +37,7 @@ def main():
         if not data:
             continue
         data = data[0]
-        print data['original_size']['url']
+        print(data['original_size']['url'])
         pictures.append(data['original_size']['url'])
 
     if not os.path.exists(user):
@@ -48,11 +46,11 @@ def main():
     download_dir = os.path.join(os.getcwd(), user)
     for url in pictures:
         #print requests.get(url, stream=True)
-        print download_file(url, download_dir), "downloaded!"
+        print(download_file(url, download_dir), "downloaded!")
 
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print "Usage: tumblr_pic_getter.py [TUMBLR_USER]"
+        print("Usage: tumblr_pic_getter.py [TUMBLR_USER]")
         sys.exit(0)
     main()

@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 from bs4 import BeautifulSoup as BS
 import os
@@ -30,7 +30,7 @@ def main():
         l_parentheses = style.rfind('(') + 1
         r_parentheses = style.rfind(')')
         path = style[l_parentheses:r_parentheses]
-        print path
+        print(path)
         stickers.append(path)
 
     title = soup.title.text.split('-')[0].strip()
@@ -39,11 +39,11 @@ def main():
 
     download_dir = os.path.join(os.getcwd(), title)
     for url in stickers:
-        print download_file(url, download_dir), "downloaded!"
+        print(download_file(url, download_dir), "downloaded!")
 
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print "Usage: line_sticker_printer.py [URL]"
+        print("Usage: line_sticker_printer.py [URL]")
         sys.exit(0)
     main()

@@ -1,0 +1,4 @@
+#git+https://github.com/dianakhuang/pytumblr.git@diana/python-3-support#egg=elasticutils
+
+git+https://github.com/dianakhuang/pytumblr.git@42650761e655daf6c111ff607df89425961334c5#egg=elasticutils
+

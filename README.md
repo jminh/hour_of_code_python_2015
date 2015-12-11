@@ -2,6 +2,11 @@
 
 # Hour of Code
 
+Agenda:
+
+1. Introduction to Python (conda) environment and Python by Jian-Min Huang 
+2. Make Make a web crawler in Python by Dainese Hsiao
+
 ## Hour of Code - Python PyCon 2016
 
 Contents:

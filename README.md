@@ -20,7 +20,7 @@ If you have installed jupyter notebook,
 ```
   $ git clone https://github.com/jminh/hour_of_code_python_2015.git
   $ cd hour_of_code_python
-  $ jupter notebook
+  $ jupyter notebook
 ```
 
 Jupyter notebook slide
@@ -33,7 +33,7 @@ $ python setup.py install
 
 $ git clone https://github.com/jminh/hour_of_code_python_2015.git
 $ cd hour_of_code_python
-$ jupter notebook
+$ jupyter notebook
 ```
 
 
